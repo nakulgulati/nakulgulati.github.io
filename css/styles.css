@@ -1,0 +1,44 @@
+body {
+    padding-top: 70px;
+}
+
+.navbar {
+    font-size: 15px;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.navbar-white {
+    background-color: #fff;
+}
+
+.navbar-white .navbar-brand {
+    color: #222;
+}
+
+.navbar-white .navbar-nav > li > a {
+    color: #222;
+}
+
+.navbar-white .navbar-toggle .icon-bar {
+    background-color: #b3b3b3;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #e5e5e5
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        padding: 12px 0;
+    }
+}
