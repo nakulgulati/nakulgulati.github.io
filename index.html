@@ -8,8 +8,10 @@
     <title>Nakul Gulati</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootswatch-yeti.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootswatch-yeti.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,62 +21,26 @@
     <![endif]-->
 </head>
 <body>
+<div id="navigation"></div>
 
-<nav class="navbar navbar-white navbar-fixed-top">
-    <div class="container">
-        <div class="bottom-border">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse"
-                        data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Nakul Gulati</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Google Summer of Code '15</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
-    </div>
-</nav>
+<div id="page-content"></div>
 
-<div class="container">
-    <div class="jumbotron">
-        <p>
-            Intro here
-        </p>
-    </div>
-</div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<div id="footer"></div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 <script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-74056402-1', 'auto');
-    ga('send', 'pageview');
+    $(function () {
+        $('#navigation').load('nav.html', function () {
+            setup();
+        });
+        $('#footer').load('footer.html');
+    });
+</script>
+<script>
 
 </script>
 </body>
 </html>
-
