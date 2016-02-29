@@ -54,62 +54,43 @@
     <div class="container">
         <div class="row project-row">
             <div class="col-lg-10">
-                <article class="project">
-                    <h3 class="zero-top">Stock Recommender System <span class="text-muted">(on going)</span></h3>
-                    <p>
-                        The project has two primary goals, stock trading data aggregation and using machine learning
-                        techniques to recommend stocks. The prelim recommendation model when tested using backtesting
-                        technique recommended stocks that generated profit.
-                    </p>
-                </article>
+                <h3 class="zero-top"><strong>Sentiment Analysis</strong></h3>
+                <p>
+                    The was aimed to predict the polarity (positive/negative) of a given text data using machine
+                    learning and natural language techniques. The sentiment analysis was applied to a movie review
+                    dataset.
+                </p>
+                <h4><strong>Implementation Details</strong></h4>
+                <p>
+                    <strong>Dataset Size:</strong> 2000 records (1000 of each polarity - positive and negative)<br>
+                    <strong>Testing and Cross validation:</strong> 10-30% of the entire dataset
+                </p>
+                <h5><strong>Language Model</strong></h5>
+                <p>
+                    Bigram Frequencies, takes in account only adjacent pair of words. Relationship between words further
+                    apart in the sentence is unaccounted for in this model.
+                </p>
 
-                <article class="project">
-                    <h3>Sentiment Analysis</h3>
-                    <p>Predicting polarity (positive/negative) of textual data using maximum likely hood approach. Click
-                        <a href="sentiment-analysis.html">here</a> for more details</p>
-                </article>
+                <h5><strong>Classifiers</strong> (implemented using scikit-learn)</h5>
+                <ul>
+                    <li>Multinomial Naive Bayesian</li>
+                    <li>Stochastic Gradient Descent</li>
+                </ul>
 
-                <article class="project">
-                    <h3>Graph Engine</h3>
-                    <p>
-                        The engine aims to provide a scalable architecture and a robust API for graph manipulation and
-                        first level entity graph generation.
-                    </p>
-                </article>
-
-                <article class="project">
-                    <h3>Location Based Customization App</h3>
-                    <p>
-                        An Android app that customizes phones settings viz. Wi-Fi, Bluetooth and data based on user's
-                        location. The user can group settings which are then associated with an area. The area is set
-                        using
-                        Android's Geofence API. Currently areas can be approximated into circular areas using radius as
-                        a
-                        parameter.
-                    </p>
-                </article>
-
-                <article class="project">
-                    <h3>War Robot</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean
-                        massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        Donec
-                        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-                        imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede </p>
-                </article>
-
-                <article class="project">
-                    <h3>Connect Four AI Bot</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean
-                        massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        Donec
-                        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-                        imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede </p>
-                </article>
+                <h5><strong>Results</strong></h5>
+                <p>
+                    The following graphs show mean accuracy, F1 score of positive and negative classes vs training set
+                    size.
+                </p>
+                <img class="img-responsive graph" src="img/mnb.jpeg"> <br>
+                <img class="img-responsive graph" src="img/sgd.jpeg">
+                <h5><strong>Links</strong></h5>
+                <ul>
+                    <li><a href="https://github.com/codebuff/sentiment-analysis" target="_blank">Project link</a> on
+                        github.com
+                    </li>
+                    <li><a href="http://scikit-learn.org/" target="_blank">scikit-learn</a> on scikit-learn.org/</li>
+                </ul>
             </div>
         </div>
     </div>

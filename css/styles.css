@@ -48,8 +48,12 @@ body {
     margin-bottom: 30px;
 }
 
-.gsoc-row{
+.gsoc-row {
     margin-bottom: 30px;
+}
+
+.zero-top {
+    margin-top: 0px;
 }
 
 h3 > span {
