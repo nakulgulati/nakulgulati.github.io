@@ -9,7 +9,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootswatch-yeti.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -25,10 +25,80 @@
 
 <div id="page-content">
     <div class="container">
-        <div class="jumbotron">
-            <p>
-                GSOC
-            </p>
+        <div class="row gsoc-row">
+            <div class="col-lg-10">
+                <h4><strong>Google Summer of Code 2015</strong></h4>
+                <p>
+                    Google Summer of Code is a global program. Students work with an open source organisation on a 3
+                    month
+                    programming project.
+                </p>
+                <p>
+                    I got an exciting opportunity through GSOC '15 to work closely with the organization Pidgin,
+                    Finch and libpurple under the guidance of my mentor Ethan Reisner
+                </p>
+                <p>
+                    <strong>libpurple</strong> is an open source IM (instant messaging) library built using C. It powers
+                    various IM clients like Pidgin, Finch and Adium.
+                </p>
+                <p>
+                    <strong>Pidgin</strong> is an open source GTK+ based chat client used by millions, built on top of
+                    libpurple. Pidgin supports various protocols viz. GTalk, XMPP, IRC, AIM, Yahoo etc.
+                </p>
+                <h4><strong>Motivation</strong></h4>
+                <p>
+                    Pidgin currently supports GTalk through the open XMPP protocol. XMPP protocol is no longer supported
+                    by Google in favour of the newer proprietary Google+ Hangouts protocol. Apart from this the GTalk
+                    XMPP does not support group chat, audio and video calls.
+                </p>
+                <p>
+                    A native implementation of the newer Google+ Hangouts protocol in libpurple will ensure continued
+                    support of the widely used IM services in libpurple based IM clients.
+                </p>
+                <h4><strong>Project Details</strong></h4>
+                <ul>
+                    <li>The protocol implementation is heavily inspired by Tom Dryer’s Hangups project</li>
+                    <li>Through the course of the project a few improvements were made in the authentication flow which
+                        were also incorporated in Hangups
+                    </li>
+                    <ul>
+                        <li>The implementation of OAuth 2.0 instead of the session based browser emulation</li>
+                        <li>Which led to the use of OAuth 2.0 Authorisation headers instead of session cookies in
+                            subsequent API calls
+                        </li>
+                    </ul>
+                </ul>
+                <p>Later the project was revived by Eion Robb which once completed would be merged in libpurple3
+                    (currently in development).
+                </p>
+                <h4><strong>Links</strong></h4>
+                <ul>
+                    <li>
+                        <a href="https://developers.google.com/open-source/gsoc/" target="_blank">GSOC website</a> on
+                        developers.google.com
+                    </li>
+                    <li>
+                        <a href="https://www.google-melange.com/gsoc/projects/list/google/gsoc2015" target="_blank">List
+                            of Accepted and finished projects in GSoC 2015</a> page on www.google-melange.com
+                    </li>
+                    <li>
+                        <a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2015/nakulgulati/5754903989321728"
+                           target="_blank">Google Hangouts Plugin: Protocol Implementation project</a> page on
+                        www.google-melange.com
+                    </li>
+                    <li>
+                        <a href="https://developer.pidgin.im" target="_blank">Organization details</a>, on
+                        developer.pidgin.im
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/tdryer/hangups" target="_blank">Hangups project</a>, on github.com
+                    </li>
+                    <li><a href="https://bitbucket.org/EionRobb/purple-hangouts" target="_blank">purple-hangouts</a>
+                        Hangouts protocol project by Eion Robb on bitbucket.org
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -37,7 +107,6 @@
 <div id="footer"></div>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
 <script>
     $(function () {
         $('#navigation').load('nav.html');

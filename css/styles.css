@@ -48,11 +48,15 @@ body {
     margin-bottom: 30px;
 }
 
+.gsoc-row{
+    margin-bottom: 30px;
+}
+
 h3 > span {
     font-size: 18px;
 }
 
-.jumbotron p, li {
+.jumbotron p, .jumbotron li {
     font-size: 18px;
     font-weight: 200;
 }
