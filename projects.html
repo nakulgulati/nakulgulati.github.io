@@ -21,7 +21,33 @@
     <![endif]-->
 </head>
 <body>
-<div id="navigation"></div>
+<div id="navigation">
+    <nav class="navbar navbar-white navbar-fixed-top">
+        <div class="container">
+            <div class="bottom-border">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse"
+                            data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Nakul Gulati</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="gsoc.html">Google Summer of Code 2015</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="nakul-gulati-resume.pdf" target="_blank">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </nav>
+</div>
 
 <div id="page-content">
     <div class="container">
@@ -86,15 +112,28 @@
     </div>
 </div>
 
+<div id="footer">
+    <div class="container">
+        <div class="row text-center">
+            <a href="https://in.linkedin.com/in/nakulgulati" target="_blank" class="btn btn-social-icon btn-linkedin">
+                <span class="fa fa-linkedin"></span>
+            </a>
+            <a href="https://github.com/nakulgulati/" target="_blank" class="btn btn-social-icon btn-github">
+                <span class="fa fa-github"></span>
+            </a>
+            <a href="mailto:nakgulati@gmail.com" target="_top" class="btn btn-social-icon btn-google">
+                <span class="glyphicon glyphicon-envelope"></span>
+            </a>
+            <a href="https://www.facebook.com/nakul.gulati" target="_blank" class="btn btn-social-icon btn-facebook">
+                <span class="fa fa-facebook"></span>
+            </a>
 
-<div id="footer"></div>
+        </div>
+    </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
-<script>
-    $(function () {
-        $('#navigation').load('nav.html');
-        $('#footer').load('footer.html');
-    });
-</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
