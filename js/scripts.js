@@ -30,5 +30,10 @@ function setup() {
         loadContent();
     });
 
+    //$(".navbar-brand").hover(function () {
+    //    $(this).html("N4ku1 Gu1471");
+    //}, function(){
+    //    $(this).html("Nakul Gulati");
+    //});
     loadContent();
 }

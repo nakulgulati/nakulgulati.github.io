@@ -44,8 +44,17 @@ body {
     border: 0px;
 }
 
-#nav-projects {
-    position: fixed;
+.project-row {
+    margin-bottom: 30px;
+}
+
+h3 > span {
+    font-size: 18px;
+}
+
+.jumbotron p, li {
+    font-size: 18px;
+    font-weight: 200;
 }
 
 @media screen and (min-width: 1024px) {
