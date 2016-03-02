@@ -72,6 +72,3 @@ crashlytics.properties
 crashlytics-build.properties
 
 # Created by .ignore support plugin (hsz.mobi)
-
-js/bootstrap.min.js
-js/jquery.min.js
