@@ -44,12 +44,12 @@ body {
     border: 0px;
 }
 
-.project-row {
+.project-row, .gsoc-row {
     margin-bottom: 30px;
 }
 
-.gsoc-row {
-    margin-bottom: 30px;
+#footer {
+    margin-bottom: 20px;
 }
 
 .zero-top {
