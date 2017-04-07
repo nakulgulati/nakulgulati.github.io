@@ -65,6 +65,10 @@ h3 > span {
     font-weight: 200;
 }
 
+.outdated{
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width: 1024px) {
     .container {
         width: 1000px;
